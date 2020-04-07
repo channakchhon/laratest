@@ -20,6 +20,6 @@ Route::get('/showAddComment/{id}','CommentController@showAddComment')->name('com
 Route::post('/add/{id}','CommentController@add')->name('comment.add');
 Route::get('test', function (){
     return view('test');
-})
+});
 
 
