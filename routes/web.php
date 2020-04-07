@@ -18,5 +18,8 @@ Route::post('/addpost','PostController@addPost')->name('post.add');
 Route::get('/showcomments/{id}','PostController@showComments')->name('post.comments');
 Route::get('/showAddComment/{id}','CommentController@showAddComment')->name('comment.showAddComment');
 Route::post('/add/{id}','CommentController@add')->name('comment.add');
+Route::get('test', function (){
+    return view('test');
+})
 
 
